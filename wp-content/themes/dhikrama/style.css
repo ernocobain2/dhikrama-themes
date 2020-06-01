@@ -4,11 +4,20 @@
     text-decoration: none;
 }
 
+body {
+    background: rgb(241, 243, 239);
+}
+
 .clippath {
-    background-color: aquamarine;
+    background: #FFEFBA;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100vh;
     width: 100%;
-    clip-path: ellipse(20% 12% at 13% 4%);
+    clip-path: ellipse(50% 65% at 91% 4%);
     z-index: 1;
 }
 
@@ -18,7 +27,7 @@
 }
 
 .container-header {
-    z-index: 2;
+    z-index: 3;
     width: 100%;
 }
 
@@ -36,9 +45,19 @@ nav ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 20px;
 }
 
 .container-navigation button {
     display: flex;
     justify-content: flex-end;
 }
+
+main {
+    padding: 100px 20px;
+}
+
+
+/*footer*/
+
+footer {}
